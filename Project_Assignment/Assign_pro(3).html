@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Document</title>
+    <style>
+        .myweb {
+            background-color: rgb(218, 230, 226);
+            width: 1000px;
+            height: 700px;
+            margin: auto;
+            border: 2px solid rgb(36, 35, 36);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .nav-links {
+            margin-bottom: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: rgb(146, 19, 89);
+            margin-right: 15px;
+            float: right;
+        }
+
+        .nav-links a:hover {
+            color: darkblue;
+        }
+
+        hr {
+            margin-top: 20px;
+            border: 1px solid rgb(51, 50, 50);
+            border-radius: 5px;
+        }
+
+        .head img {
+            float: left; /* Move the image to the left */
+            margin-right: 20px; /* Adds space between image and text */
+            width: 400px; /* Set image width */
+            height:210px;
+            margin-left: 20px;
+        }
+
+       
+        .head h2 ,h4{
+            text-align: left;
+            font-size: 28px;
+            color: rgb(32, 32, 34);
+
+        }
+   
+        p {
+            text-align: justify;
+            color: rgb(37, 37, 37);
+            font-size: 16px;
+
+            
+        }
+
+        /* Clear the float for better layout */
+        .head::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .form >img{
+            float: right; /* Move the image to the left */
+            margin-left: 30px; /* Adds space between image and text */
+            width: 400px; /* Set image width */
+            height:200px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="myweb">
+        <div class="head">
+            <div class="nav-links">
+                BORCELLE &emsp;&emsp;
+                <a href="#">HOME</a>&emsp;
+                <a href="#">ABOUT</a>&emsp;
+                <a href="#">COURSES</a>&emsp;
+                <a href="#">SHOP</a>&emsp;
+                <a href="#">CONTACT</a>&emsp;
+                <a href="#">SERVICES</a>&emsp;
+            </div>
+            <hr>
+            <img src="https://tsmpk.com/image/cache/catalog/COSRX%20-%20Advanced%20Snail%2096%20Mucin%20Power%20Essence%20100ml%207-500x500.jpg.webp" alt="">
+            <h2>Beauty at home</h2>
+            <h4>A 6-week online course</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="form">
+            <img src="https://media.allure.com/photos/62b4b15e2e5a7f46c44de1f9/3:2/w_3000,h_2000,c_limit/best%20korean%20skin-care%20brands%20lede.jpg" alt="">
+            <h2>Cosmetology</h2>
+            <h4>A-4-week online course</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            
+
+        </div>
+           
+        </div>
+    </div>
+</body>
+</html>

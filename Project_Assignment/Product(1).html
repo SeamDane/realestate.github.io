@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: aliceblue;
+            margin: 0;
+            padding: 0;
+        }
+        .Menu_Skin_care {
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background-color: rgb(253, 240, 224);
+            border-radius: 15px;
+            box-shadow: #f4f4f4;
+        }
+        .Borcelle {
+            font-weight: bold;
+            font-size: 24px;
+            text-align: center;
+            color: #6d0e0e;
+        }
+        .Menu-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .Menu-header h1 {
+            font-size: 30px;
+            color: #6d0e0e;
+        }
+        .Menu-header p {
+            font-size: 16px;
+            color: #22412f;
+        }
+        .Menu-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .items {
+            background-color: rgb(248, 195, 232);
+            border: 2px solid #0e095c;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 5px 6px #6e6465;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+        .items:hover {
+            transform: scale(1.05);
+        }
+        .items img {
+            width: 160px;
+            height: 210px;
+            border-radius: 9px;
+            object-fit: cover;
+        }
+        .items h1 {
+            font-size: 20px;
+            color: #280569;
+            margin-top: 15px;
+        }
+        .items .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #395533;
+            margin-top: 10px;
+        }
+        .items .order-button {
+            background-color: #15b2b8;
+            border: none;
+            color: #fff;
+            font-weight: bolder;
+            padding: 8px 16px;
+            font-size: 18px;
+            border-radius: 10px;
+            margin-top: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .items .order-button:hover {
+            background-color: #2ecc71;
+        }
+        /* Navigation styling */
+        .Menu_Skin_care a {
+            color: #22412f;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 16px;
+        }
+        .Menu_Skin_care a:hover {
+            color: #6d0e0e;
+        }
+        hr {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="Menu_Skin_care">
+        <div class="Borcelle">
+            BORCELLE
+        </div>
+        <div class="Menu-nav">
+            <a href="#">HOM</a>
+            <a href="#">ABOUT</a>
+            <a href="#">COURSES</a>
+            <a href="#">SHOP</a>
+            <a href="#">CONTACT</a>
+            <a href="#">SERVICES</a>
+        </div>
+        <hr>
+        <div class="Menu-header">
+            <h1>ONLINE SHOP</h1>
+            <p>Lorem ipsum dolor sit amet, consectur adipiscing elit, sed do eiusmod tempor incididunt ut <br>labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <hr>
+        <div class="Menu-items">
+            <div class="items">
+                <img src="https://assets-cdn.vtenh.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNU1ZQ1E9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--5dcc4f2ed4948d211e5291d8e766b2adab0133f5/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RTNKbGMybDZaVjloYm1SZmNHRmtXd2RwQWxnQ2FRSllBZz09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--3dee1ed9b6e56500806820ced664e44d84074fae/scaled_image_picker7690830510253977413.jpg?locale=en" alt="Centella">
+                <h1>CENTELLA</h1>
+                <div class="price">$12</div>
+                <div class="order-button" onclick="order('Centella', 12)">Order</div>
+            </div>
+            <div class="items">
+                <img src="https://kbeautynotes.com/wp-content/uploads/2022/09/skin1004-Madagascar-Centella-Hyalu-cica-Water-fit-Sunscreen.jpg" alt="Sunscreen">
+                <h1>SUMSCREEN</h1>
+                <div class="price">$10</div>
+                <div class="order-button" onclick="order('Sunscreen', 10)">Order</div>
+            </div>
+            <div class="items">
+                <img src="https://static.sweetcare.com/img/prd/max/v-638261426824050074/skin1004-017973kn-1.jpg" alt="Serum">
+                <h1>SERUM</h1>
+                <div class="price">$10</div>
+                <div class="order-button" onclick="addToCart('Serum', 10)">Order</div>
+            </div>
+            <div class="items">
+                <img src="https://romamerica.com/cdn/shop/files/skin1004-tea-trica-bha-foam-37889696366838_1000x_653c3519-a429-4182-b26c-a3363b9b9911_1000x.webp?v=1710359884" alt="Form">
+                <h1>FORM</h1>
+                <div class="price">$9</div>
+                <div class="order-button" onclick="addToCart('Form', 9)">Order</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function order() {
+            alert(itemName + " has been added to your cart. Price: $" + itemPrice);
+        }
+    </script>
+</body>
+</html>

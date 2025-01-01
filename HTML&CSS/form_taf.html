@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input,
+        
+        label{
+            font: size 16px;
+            cplor:blue
+        }
+        label{
+            font-family:Arial;
+            font-size:18px;
+        }
+        input{
+            background-color: aquamarine;
+            padding:9px;
+            margin-bottom: 15px;
+            border-radius: 10px
+
+        }
+        botton{
+            padding: 10px 20px;
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: brown(254,17,211);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+   
+    <hr>
+    <form action="#">
+        <fieldset>
+            <legend align="center"><h3>Create a HTML form</h3></legend>
+        </fieldset>
+        <label>Name</label> : <input type="text" vale="" size="25" name="txtname" placeholder="Input your name"/><br/><br>
+        Email : <input type="email" size="25" name="email" placeholder="Your email"/><br/><br>
+        Password :<input type="password" size="25" placeholder="Your Password"/><br/><br>
+        Brirthday :<input type="date" size="25" name="dob"/><br/><br>
+        Gender : <input type="radio" name="sex" value="Male"/>Male<br>
+                <input type="radio" name="sex" value="Female"/>Female<br/>
+        languages : <input type="checkbox" name="kh" value="khmer"/>khmer
+                    <input type="checkbox" name="en" value="English"/>English
+                    <input type="checkbox" name="th" value="Thai"/>Thai
+                    <input type="checkbox" name="vn" value="Vietnam"/>Vietnam
+        <br/>
+        Plase of Birth :<textarea cols="20" rows="5" name="pob">
+            Your Plase of Birth here
+        </textarea><br/>
+        Country :
+        <select name="country">
+            <option value="kh">Cambodia</option>
+            <option value="th">Thailand</option>
+            <option value="lao">lao</option>
+            <option value="vn">Vietnam</option>
+        </select><br>
+        <br/>
+        <input type="Submit" value="submit" name="bth">
+        <botton>
+            <input type="Button" value="Button" name="button">
+         </botton>
+        <input type="reset" value="Cancel" name="cancle"/>
+        
+    </form>
+</body>
+</html>

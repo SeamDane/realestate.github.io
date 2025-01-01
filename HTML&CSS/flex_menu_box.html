@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        .logo{
+            
+            color: brown;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .navbar{
+            display: flex;
+            padding: 10px 20px;
+            justify-content: space-between;
+            background-color: aquamarine;
+            text-align: center;
+
+        }
+        .navbar a{
+            padding:10px 5px;
+            text-decoration: none;
+        }
+        .navbar a:hover{
+            background-color: rgb(189, 23, 51);
+        }
+        .content{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            text-align: center;
+            flex-direction: row-reverse;
+
+            gap: 1px;
+        }
+        .box{
+            background-color:blueviolet;
+            margin: 10px;
+            flex: 1 1 200px;
+            box-shadow: 0 2px 5px pink
+            border-radius: 5px;
+            width: 500px;
+            height: 150px;
+            padding: 20px;
+            
+            
+        }
+        .box p{
+            justify-content: center;
+            align-items:center;
+            
+        }
+    </style>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            My logo
+        </div>
+        <div class="">
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">News</a>
+            <a href="#">About Us</a>
+
+        </div>
+        
+    </div>
+    <div class="content">
+        <div class="box"> <p>box1</p> </div>
+        <div class="box"> box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        
+    </div>
+    <div class="container">
+        <header class="header">
+            <h1>My Flexbox Layout</h1>
+
+        </header>
+        <main class="main-content">
+            <section class="content-left">
+                <h2>Left Sidebar</h2>
+                <p>This is a sidebar content area.</p>
+
+
+            </section>
+            <section class="content-main">
+                <h2>Main Content</h2>
+                <p>This is main content area</p>
+                <p>Flexbox makes it easy to creatw flexbox layout</p>
+                
+            </section>
+        </main>
+    </div>
+</body>
+</html>

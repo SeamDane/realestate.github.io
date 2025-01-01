@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="kh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="invoice-container">
+        <header class="invoice-header">
+            <div class="company-details">
+                <h1>ឈ្មោះក្រុមហ៊ុន</h1>
+                <p>អាសយដ្ឋានក្រុមហ៊ុន</p>
+                <p>ទូរស័ព្ទ: 012345678</p>
+            </div>
+            <div class="invoice-info">
+                <h2>វិក្កយបត្រ</h2>
+                <p>លេខវិក្កយបត្រ: INV-00123</p>
+                <p>កាលបរិច្ឆេទ: 2024-12-02</p>
+            </div>
+        </header>
+        
+        <section class="billing-details">
+            <h3>ព័ត៌មានអតិថិជន</h3>
+            <p>ឈ្មោះអតិថិជន: ឈ្មោះអតិថិជន</p>
+            <p>អាសយដ្ឋាន: អាសយដ្ឋានអតិថិជន</p>
+            <p>ទូរស័ព្ទ: 098765432</p>
+        </section>
+
+        <table class="invoice-items">
+            <thead>
+                <tr>
+                    <th>លរ</th>
+                    <th>ទំនិញ</th>
+                    <th>តម្លៃ</th>
+                    <th>បរិមាណ</th>
+                    <th>តម្លៃសរុប</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>ទំនិញ A</td>
+                    <td>5000</td>
+                    <td>2</td>
+                    <td>10000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>ទំនិញ B</td>
+                    <td>3000</td>
+                    <td>3</td>
+                    <td>9000</td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="total-label">តម្លៃសរុប</td>
+                    <td>19000</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <footer class="invoice-footer">
+            <p>សូមអរគុណសម្រាប់ការទិញទំនិញជាមួយយើង!</p>
+        </footer>
+    </div>
+</body>
+</html>

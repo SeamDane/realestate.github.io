@@ -1,0 +1,142 @@
+-<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+        .invoice-container {
+            width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgb(250, 162, 224);
+            box-shadow: 0 2px 10px rgba(236, 114, 114, 0.1);
+        }
+        .invoice-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #e97bda;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        .invoice-header .company-info {
+            font-size: 16px;
+        }
+        .invoice-header .invoice-title {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .invoice-details {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .invoice-details .customer-info,
+        .invoice-details .date-info {
+            font-size: 14px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table th, table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        table th {
+            background-color: #f1f1f1;
+            font-weight: bold;
+        }
+        .total {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+        .total .total-label {
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        .total .total-amount {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="invoice-container">
+        <div class="invoice-header">
+            <div class="company-info">
+                <h2>Company Name</h2>
+                <p>🏠Address Line 1</p>
+                <p>🏠Address Line 2</p>
+                <p>☎️Phone: (123) 456-7890</p>
+            </div>
+            <div class="invoice-title">
+                <h1>Invoice</h1>
+                
+            </div>
+        </div>
+
+        <div class="invoice-details">
+            <div class="customer-info">
+                <h3>Bill To:</h3>
+                <p>Customer Name:</p>
+                <p>Customer Address:</p>
+                <p>Email: customer@Au_bek_kaaum.com</p>
+            </div>
+            <div class="date-info">
+                <p><strong>Invoice Date:</strong> December 2, 2024</p>
+                <p><strong>Due Date:</strong> December 3, 2024</p>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Quantity</th>
+                    <th>Unit Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Product 1</td>
+                    <td>2</td>
+                    <td>$15.00</td>
+                    <td>$30.00</td>
+                </tr>
+                <tr>
+                    <td>Product 2</td>
+                    <td>2</td>
+                    <td>$25.00</td>
+                    <td>$50.00</td>
+                </tr>
+                <tr>
+                    <td>Service Fee</td>
+                    <td>2</td>
+                    <td>$100.00</td>
+                    <td>$200.00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="total">
+            <div class="total-label">Total:</div>
+            <div class="total-amount">$280.00</div>
+        </div>
+    </div>
+
+</body>
+</html>
